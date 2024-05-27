@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>selectors</title>
+    </head>
+    <body>
+        <h1 id = "violet">this is heading tag</h1>
+        <h1 id = "violet">this is heading tag1</h1>
+        <h2>this is heading tag2</h2>
+        <h2>this is heading tag2</h2>
+        <h3 class = "green">this is heading tag3</h3>
+        <h3>this is heading tag3</h3>
+        <h4 class = "green">this is heading tag4</h4>
+        <h4 class = "green">this is heading tag4</h4>
+        <h5 class = "green">this is heading tag5</h5>
+        <p class = "green">this is para tag</p>
+        <p class = "green">this is para tag</p>
+        <div class = "green">this is div tag</div>
+        <div class = "green">this is div tag</div>
+        <div class = "green">this is div tag</div>
+        <div class = "green">this is div tag</div>
+        <div id = "lawngreen">this is div tag</div>
+        <div>this is div tag</div>
+        <div>this is div tag</div>
+        <div class = "yellow">this is div tag</div>
+        <div>this is div tag</div>
+        <button id = "h1">change h1</button>
+        <button id = "h2&h3">change h2&h3</button>
+        <button id = "h3">change h3</button>
+        <button id = "h4&h5">change h4&h5</button>
+        <button id = "p">change p</button>
+        <button id = "div">change div</button>
+    </body>
+</html>
+<script>
+    document.querySelector("#h1").addEventListener("click",h1);
+    document.querySelector("#h2&h3").addEventListener("click",h2_h3);
+    document.querySelector("#h3").addEventListener("click",h3);
+    document.querySelector("#h4&h5").addEventListener("click",h4_h5);
+    document.querySelector("#p").addEventListener("click",p);
+    document.querySelector("#div").addEventListener("click",div);
+function h1(){
+    document.querySelector("#h1").style = "color:violet";
+    document.querySelector("h2").style = "color:teal";
+    document.querySelector("h3").style = "color:skyblue";
+
+}
+function h2_h3(){
+    document.querySelector("#h2&h3").style = "color:skyblue";
+    document.querySelector(".h3").style = "color:green";
+
+}
+function h3(){
+    document.querySelector(".h3").style = "color:green";
+}
+function h4_h5(){
+    document.querySelector(".h4").style = "color:red";
+    document.querySelector(".h5").style = "color:maroon";
+}
+function p(){
+    document.querySelector(".p").style = "color:lawngreen";
+}
+function div(){
+    document.querySelector(".div").style = "color:blue";
+    document.querySelector("div").style = "color: lightblue";
+}
+
+
+
+
+
+</script>
